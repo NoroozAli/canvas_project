@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Canvasproject</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+  </head>
+  <body>
+      <div class="header-wrap">
+      <input type="text" name="header" id="header" placeholder="enter the header" onchange="AddHeader();">
+      <!-- <input type="button" id="h-btn" value="AddHeader" >  -->
+    </div> 
+    <div class="container">
+      <div id="header-remove"></div>
+      <canvas id="image-box" class="canvas-box"></canvas>
+      <div id="footer-remove"></div>
+      <div class="selectfile">
+      <input type="file" name="file" id="inputimage">
+      </div>
+    </div>
+      <div class="footer-wrap"><input type="text" name="footer" id="footer" placeholder="enter the footer" onchange="AddFooter();">
+        <!-- <input type="button" id="f-btn" value="AddFooter" > -->
+      </div>  
+      <div style="display: flex;justify-content: center; margin-top: 15px;">
+        <input type="button" name="download" id="downloadbutton"  onclick="Downloadimage();" value="download"> 
+      </div>
+  </body>
+</html>
