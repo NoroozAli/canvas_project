@@ -17,7 +17,7 @@ body{
 .canvas-box{
 display: flex;
 justify-content: center;
-margin-top: 15px;
+margin-top: 37px;
 border: 1px solid;
 }
 .footer-wrap{
@@ -25,13 +25,7 @@ border: 1px solid;
   justify-content: center;
   margin-top: 8px;
 }
-#header-remove{
+#middle{
   position: absolute;
-  top: 46px;
-  left: 47%;
-}
-#footer-remove{
-  position: absolute;
-  top: 11rem;
-  left: 18rem;
+  top: 12%;
 }

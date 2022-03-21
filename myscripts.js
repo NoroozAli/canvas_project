@@ -2,13 +2,14 @@ function AddHeader() {
     var headerText = document.getElementById("header").value;
     var c = document.getElementById("image-box");
     var ctx = c.getContext("2d");
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "Black";
     ctx.font = "bold 15px Yrsa SemiBold";
-    ctx.fillText(headerText, 150, 15);
+    const xh= document.getElementById("header").value
+    ctx.fillText(headerText, 130, 15);
 
     $('input').keyup(function() {
       context.clearRect(0, 0,  canvas.width,canvas.height);
-      context.fillText($(this).val(), 150, 15);
+      // context.fillText($(this).val(), 15, 10);
    
     });
   }
@@ -22,6 +23,10 @@ function AddHeader() {
     document.getElementById("footer").addEventListener('keyup',function() {
       const value = document.getElementById("footer").value
       document.getElementById('footer-remove').innerHTML = value
+    })
+    document.getElementById("middle").addEventListener('keyup',function() {
+      const value = document.getElementById("middle").value
+      document.getElementById('middle-remove').innerHTML = value
     })
 
     document.getElementById("inputimage").addEventListener('change', function() {
@@ -86,7 +91,8 @@ function AddHeader() {
         var ctx = c.getContext("2d");
         ctx.fillStyle = "black";
         ctx.font = "bold 15px Yrsa SemiBold";
-        ctx.fillText(footerText, 90,160);
+        const xf= document.getElementById("footer").value
+        ctx.fillText(footerText, 130, 140);
 
         $('input').keyup(function() {
           context.clearRect(0, 0,  canvas.width,canvas.height);
@@ -94,3 +100,18 @@ function AddHeader() {
        
         });
     }
+    function AddMiddle() {
+      var middleText = document.getElementById("middle").value;
+      var c = document.getElementById("image-box");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "black";
+      ctx.font = "bold 15px Yrsa SemiBold";
+      // const xf= document.getElementById("middle").value
+      ctx.fillText(middleText, 130 ,80);
+
+      $('input').keyup(function() {
+        context.clearRect(0, 0,  canvas.width,canvas.height);
+        context.fillText($(this).val(), 100, 150);
+     
+      });
+  }
