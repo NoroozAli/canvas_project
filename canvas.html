@@ -9,19 +9,39 @@
   </head>
   <body>
       <div class="header-wrap">
+
       <input type="text" name="header" id="header" placeholder="enter the header" onchange="AddHeader();">
-      <input type="text" name="middle" id="middle" placeholder="enter the middle" onchange="AddMiddle();">
-    </div> 
+      <input type="text" name="header" id="hx-axis" placeholder="Enter x axis">
+
+    </div>
+    <div class="header-wrap">
+      <input type="text" name="middle" id="middle" placeholder="enter the middle" onchange="Addcenter();">
+      <input type="text" name="middle" id="mx-axis" placeholder="Enter x axis">
+    </div>
+
     <div class="container">
-      <canvas id="image-box" class="canvas-box"></canvas>
+
+
+      <div class="canvas-box">
+        <div style="display: flex; flex-direction: column;">
+          <div id="header-text"  style="display: flex; width: 100%;"></div>
+          <div id="middle-text" style="display: flex; width: 100%"></div>
+          <div id="footer-text" style="display: flex;  width: 100%"></div>
+        </div>
+
+        <canvas id="image-box"></canvas>
+
+      </div>
       <div class="selectfile">
       <input type="file" name="file" id="inputimage">
       </div>
     </div>
-      <div class="footer-wrap"><input type="text" name="footer" id="footer" placeholder="enter the footer" onchange="AddFooter();">
-      </div>  
+      <div class="footer-wrap">
+        <input type="text" name="footer" id="footer" placeholder="enter the footer" onchange="AddFooter();">
+        <input type="text" name="footer" id="fx-axis" placeholder="Enter x axis">
+      </div>
       <div style="display: flex;justify-content: center; margin-top: 15px;">
-        <input type="button" name="download" id="downloadbutton"  onclick="Downloadimage();" value="download"> 
+        <input type="button" name="download" id="downloadbutton"  onclick="Downloadimage();" value="download">
       </div>
   </body>
 </html>

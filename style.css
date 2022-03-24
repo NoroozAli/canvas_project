@@ -6,26 +6,20 @@ body{
 }
 .header-wrap{
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 .container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8px; 
 }
 .canvas-box{
-display: flex;
-justify-content: center;
-margin-top: 37px;
-border: 1px solid;
+  position: relative;
+  border: 1px solid;
+
 }
 .footer-wrap{
   display: flex;
   justify-content: center;
   margin-top: 8px;
-}
-#middle{
-  position: absolute;
-  top: 12%;
 }
